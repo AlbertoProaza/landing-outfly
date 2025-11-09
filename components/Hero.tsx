@@ -1,14 +1,19 @@
 export default function Hero() {
   return (
     <section className="relative min-h-screen bg-black flex items-center justify-center px-4 py-16 md:py-20 overflow-hidden">
-      {/* Fondo animado sutil con pequeños degradados neón */}
+      {/* Fondo con degradados suaves */}
       <div className="absolute inset-0 bg-black">
-        <div className="absolute top-20 left-10 w-64 h-64 bg-[#00D4FF] rounded-full mix-blend-screen filter blur-3xl opacity-30 animate-blob"></div>
-        <div className="absolute top-40 right-20 w-56 h-56 bg-[#FF0088] rounded-full mix-blend-screen filter blur-3xl opacity-25 animate-blob animation-delay-2000"></div>
-        <div className="absolute bottom-32 left-1/4 w-60 h-60 bg-[#00D4FF] rounded-full mix-blend-screen filter blur-3xl opacity-30 animate-blob animation-delay-4000"></div>
-        <div className="absolute bottom-20 right-1/3 w-52 h-52 bg-[#FF0088] rounded-full mix-blend-screen filter blur-3xl opacity-25 animate-blob animation-delay-6000"></div>
-        <div className="absolute top-1/2 left-1/2 w-48 h-48 bg-[#00D4FF] rounded-full mix-blend-screen filter blur-3xl opacity-20 animate-blob animation-delay-3000"></div>
-        <div className="absolute top-10 right-1/4 w-44 h-44 bg-[#FF0088] rounded-full mix-blend-screen filter blur-3xl opacity-20 animate-blob animation-delay-1000"></div>
+        {/* Degradado azul superior izquierdo */}
+        <div className="absolute -top-40 -left-40 w-[600px] h-[600px] bg-[#00D4FF] opacity-[0.08] blur-[120px]"></div>
+        
+        {/* Degradado rosa superior derecho */}
+        <div className="absolute -top-20 -right-20 w-[500px] h-[500px] bg-[#FF0088] opacity-[0.06] blur-[100px]"></div>
+        
+        {/* Degradado azul detrás del video */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-[#00D4FF] opacity-[0.05] blur-[150px]"></div>
+        
+        {/* Degradado rosa inferior */}
+        <div className="absolute -bottom-40 left-1/3 w-[700px] h-[700px] bg-[#FF0088] opacity-[0.07] blur-[130px]"></div>
       </div>
 
       {/* Contenedor principal con animación de entrada (fade-in + slide-up) */}

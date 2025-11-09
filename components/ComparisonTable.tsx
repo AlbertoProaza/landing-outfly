@@ -97,10 +97,16 @@ export default function ComparisonTable() {
 
   return (
     <section ref={sectionRef} className="relative bg-black py-20 md:py-28 overflow-hidden border-t border-white/10">
-      {/* Fondo animado */}
+      {/* Fondo con degradados suaves */}
       <div className="absolute inset-0">
-        <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-[#00D4FF] rounded-full mix-blend-screen filter blur-3xl opacity-15 animate-blob"></div>
-        <div className="absolute bottom-1/3 left-1/4 w-96 h-96 bg-[#FF0088] rounded-full mix-blend-screen filter blur-3xl opacity-15 animate-blob animation-delay-4000"></div>
+        {/* Degradado rosa superior derecha */}
+        <div className="absolute top-0 right-1/4 w-[600px] h-[500px] bg-[#FF0088] opacity-[0.05] blur-[120px]"></div>
+        
+        {/* Degradado azul centro izquierda */}
+        <div className="absolute top-1/2 -translate-y-1/2 left-1/4 w-[550px] h-[550px] bg-[#00D4FF] opacity-[0.06] blur-[130px]"></div>
+        
+        {/* Degradado rosa inferior */}
+        <div className="absolute bottom-0 right-1/3 w-[500px] h-[400px] bg-[#FF0088] opacity-[0.04] blur-[100px]"></div>
       </div>
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 md:px-6 lg:px-8">

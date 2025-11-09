@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useRef, useState, useEffect } from 'react';
 
@@ -63,14 +63,14 @@ export default function CompaniesSlider() {
   return (
     <section className="relative bg-black py-16 md:py-20 overflow-hidden border-t border-white/10">
       {/* Título de la sección */}
-      <div className="max-w-7xl mx-auto px-4 mb-12">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 mb-12">
         <h2 className="font-[family-name:var(--font-montserrat)] text-2xl md:text-3xl lg:text-4xl font-bold text-white text-center">
           Empresas que confían en nosotros
         </h2>
       </div>
 
       {/* Contenedor del carousel con drag horizontal */}
-      <div className="relative overflow-hidden">
+      <div className="relative overflow-hidden z-10">
         {/* Gradientes en los bordes para efecto de fade */}
         <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-black to-transparent z-10 pointer-events-none"></div>
         <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-black to-transparent z-10 pointer-events-none"></div>
@@ -90,9 +90,12 @@ export default function CompaniesSlider() {
               key={index}
               className="flex-shrink-0 w-32 h-20 md:w-40 md:h-24 lg:w-48 lg:h-28 relative grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100"
             >
-              {/* Placeholder para el logo */}
-              <div className="w-full h-full flex items-center justify-center border border-white/20 rounded-lg bg-white/5 backdrop-blur-sm pointer-events-none">
-                <span className="font-[family-name:var(--font-montserrat)] text-white/40 text-sm font-semibold">
+              {/* Placeholder para el logo con degradado de fondo */}
+              <div className="relative w-full h-full flex items-center justify-center border border-white/20 rounded-lg bg-white/5 backdrop-blur-sm pointer-events-none overflow-hidden">
+                {/* Degradado sutil detrás del logo */}
+                <div className="absolute inset-0 bg-gradient-to-br from-[#00D4FF]/10 via-transparent to-[#FF0088]/10 opacity-50"></div>
+                
+                <span className="relative z-10 font-[family-name:var(--font-montserrat)] text-white/40 text-sm font-semibold">
                   {company.name}
                 </span>
               </div>
