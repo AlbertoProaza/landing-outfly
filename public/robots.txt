@@ -1,0 +1,12 @@
+# Robots.txt para Outfly Marketing
+# Permite que todos los buscadores indexen todo el contenido
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://outfly-marketing.com/sitemap.xml
+
+# Crawl-delay para bots agresivos
+User-agent: *
+Crawl-delay: 1
