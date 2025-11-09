@@ -120,7 +120,7 @@ export default function CompaniesSlider() {
       {/* Texto adicional opcional */}
       <div className="max-w-7xl mx-auto px-4 mt-12 text-center">
         <p className="font-[family-name:var(--font-montserrat)] text-white/60 text-sm md:text-base">
-          +100 empresas nos han elegido para incrementar sus ventas
+          +5 empresas nos han elegido para incrementar sus ventas
         </p>
       </div>
     </section>
