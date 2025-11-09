@@ -39,9 +39,14 @@ export default function Hero() {
 
         {/* Botón CTA con degradado #00D4FF → #FF0088 y efectos hover */}
         <div className="flex justify-center pt-4">
-          <button className="font-[family-name:var(--font-montserrat)] text-lg md:text-xl font-semibold text-white px-10 py-4 md:px-14 md:py-5 rounded-full bg-gradient-to-r from-[#00D4FF] to-[#FF0088] shadow-lg shadow-pink-500/30 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-pink-500/50 hover:brightness-110 active:scale-100">
+          <a 
+            href="https://calendly.com/albertoproaza04/llamada-con-alberto"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-[family-name:var(--font-montserrat)] text-lg md:text-xl font-semibold text-white px-10 py-4 md:px-14 md:py-5 rounded-full bg-gradient-to-r from-[#00D4FF] to-[#FF0088] shadow-lg shadow-pink-500/30 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-pink-500/50 hover:brightness-110 active:scale-100 inline-block text-center"
+          >
             Agendar llamada
-          </button>
+          </a>
         </div>
 
       </div>
