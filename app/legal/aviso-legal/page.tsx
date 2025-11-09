@@ -33,11 +33,10 @@ export default function AvisoLegal() {
           <div className="text-gray-300 space-y-2 leading-relaxed">
             <p>En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y Comercio Electrónico (LSSI-CE), se informa a los usuarios de los datos identificativos del titular de este sitio web:</p>
             <ul className="list-disc list-inside space-y-2 ml-4">
-              <li><strong>Titular:</strong> Outfly Marketing</li>
-              <li><strong>NIF/CIF:</strong> [Pendiente de completar]</li>
-              <li><strong>Domicilio social:</strong> [Dirección completa]</li>
-              <li><strong>Correo electrónico:</strong> albertoproaza04@gmail.com</li>
-              <li><strong>Teléfono:</strong> +34 XXX XXX XXX</li>
+              <li><strong>Titular:</strong> Alberto García López</li>
+              <li><strong>NIF/CIF:</strong> 71999579B</li>
+              <li><strong>Domicilio social:</strong> Proaza 33114, Carretera general 140 2C</li>
+              <li><strong>Correo electrónico:</strong> alberto@outflymarketing.com</li>
               <li><strong>Sitio web:</strong> outflymarketing.com</li>
             </ul>
           </div>
