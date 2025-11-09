@@ -34,10 +34,9 @@ export default function PoliticaPrivacidad() {
             <p>En cumplimiento del Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo (RGPD) y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD), se informa:</p>
             <ul className="list-disc list-inside space-y-2 ml-4">
               <li><strong>Responsable:</strong> Outfly Marketing</li>
-              <li><strong>NIF/CIF:</strong> [Pendiente de completar]</li>
-              <li><strong>Domicilio:</strong> [Dirección completa]</li>
+              <li><strong>NIF/CIF:</strong> 71999579B</li>
+              <li><strong>Domicilio:</strong> Proaza 33114, Carretera general 140 2C</li>
               <li><strong>Email:</strong> albertoproaza04@gmail.com</li>
-              <li><strong>Teléfono:</strong> +34 XXX XXX XXX</li>
             </ul>
           </div>
         </section>
