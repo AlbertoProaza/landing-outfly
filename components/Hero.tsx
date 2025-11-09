@@ -35,8 +35,7 @@ export default function Hero() {
               disablePictureInPicture
               playsInline
             >
-              <source src="/videos/video_web.mp4" type="video/mp4" />
-              <source src="/videos/video_web.webm" type="video/webm" />
+              <source src="/videos/VIDEO_WEB.mp4" type="video/mp4" />
               Tu navegador no soporta la reproducción de video.
             </video>
           </div>
