@@ -1,13 +1,14 @@
 ﻿'use client';
 
 import { useRef, useState, useEffect } from 'react';
+import Image from 'next/image';
 
 export default function CompaniesSlider() {
-  // Array de logos de empresas (solo 3 empresas)
+  // Array de logos de empresas
   const companies = [
-    { name: 'Empresa 1', logo: '/logos/company1.png' },
-    { name: 'Empresa 2', logo: '/logos/company2.png' },
-    { name: 'Empresa 3', logo: '/logos/company3.png' },
+    { name: 'Hello SEO SEM', logo: '/logos/logo_helloseosem.png' },
+    { name: 'RCO Digital', logo: '/logos/logo_rcodigital.png' },
+    { name: 'Haz Legal Tu Web', logo: '/logos/logo_hazlegaltuweb.png' },
   ];
 
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -90,14 +91,26 @@ export default function CompaniesSlider() {
               key={index}
               className="flex-shrink-0 w-32 h-20 md:w-40 md:h-24 lg:w-48 lg:h-28 relative grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100"
             >
-              {/* Placeholder para el logo con degradado de fondo */}
-              <div className="relative w-full h-full flex items-center justify-center border border-white/20 rounded-lg bg-white/5 backdrop-blur-sm pointer-events-none overflow-hidden">
+              {/* Contenedor del logo con degradado de fondo */}
+              <div className="relative w-full h-full border border-white/20 rounded-lg bg-white/5 backdrop-blur-sm overflow-hidden">
                 {/* Degradado sutil detrás del logo */}
                 <div className="absolute inset-0 bg-gradient-to-br from-[#00D4FF]/10 via-transparent to-[#FF0088]/10 opacity-50"></div>
                 
-                <span className="relative z-10 font-[family-name:var(--font-montserrat)] text-white/40 text-sm font-semibold">
-                  {company.name}
-                </span>
+                {/* Logo de la empresa o placeholder */}
+                {company.logo.includes('helloseosem') || company.logo.includes('rcodigital') || company.logo.includes('hazlegaltuweb') ? (
+                  <Image
+                    src={company.logo}
+                    alt={company.name}
+                    fill
+                    className="object-cover pointer-events-none"
+                  />
+                ) : (
+                  <div className="relative z-10 w-full h-full flex items-center justify-center pointer-events-none">
+                    <span className="font-[family-name:var(--font-montserrat)] text-white/40 text-sm font-semibold">
+                      {company.name}
+                    </span>
+                  </div>
+                )}
               </div>
             </div>
           ))}
