@@ -163,10 +163,15 @@ export default function PlanGrowth() {
 
         {/* CTA final */}
         <div className="mt-16 md:mt-20 text-center">
-          <button className="group relative font-[family-name:var(--font-montserrat)] text-lg md:text-xl font-semibold text-white px-12 py-5 md:px-16 md:py-6 rounded-full bg-gradient-to-r from-[#00D4FF] to-[#FF0088] shadow-lg shadow-pink-500/30 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-pink-500/50 active:scale-100">
+          <a
+            href="https://calendly.com/albertoproaza04/llamada-con-alberto"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative inline-block font-[family-name:var(--font-montserrat)] text-lg md:text-xl font-semibold text-white px-12 py-5 md:px-16 md:py-6 rounded-full bg-gradient-to-r from-[#00D4FF] to-[#FF0088] shadow-lg shadow-pink-500/30 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-pink-500/50 active:scale-100"
+          >
             <span className="relative z-10">Quiero mi plan growth</span>
             <div className="absolute inset-0 rounded-full bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-          </button>
+          </a>
           
           <p className="font-[family-name:var(--font-montserrat)] text-white/60 text-sm mt-4">
             Sin permanencia • Resultados garantizados
