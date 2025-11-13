@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     description: "Sistema de prospección en frío automatizado. Conseguimos reuniones cualificadas para tu negocio sin gastar en publicidad.",
     images: [
       {
-        url: "/og-image.jpg", // Necesitarás crear esta imagen
+        url: "/opengraph.png",
         width: 1200,
         height: 630,
         alt: "Outfly Marketing - Reuniones Cualificadas",
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Outfly Marketing - 3 a 5 Reuniones Cualificadas sin Anuncios",
     description: "Sistema de prospección en frío automatizado que genera reuniones cualificadas para tu negocio.",
-    images: ["/og-image.jpg"],
+    images: ["/opengraph.png"],
     creator: "@outflymarketing",
   },
   verification: {
