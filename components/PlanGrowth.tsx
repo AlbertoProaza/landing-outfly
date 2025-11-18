@@ -10,7 +10,7 @@ export default function PlanGrowth() {
     {
       text: (
         <>
-          Consigue de <span className="text-[#00D4FF] font-bold">3 a 5 reuniones semanales</span> con clientes cualificados{' '}
+          Te conseguimos de <span className="text-[#00D4FF] font-bold">3 a 5 reuniones semanales</span> con clientes cualificados{' '}
           <span className="text-[#FF0088] font-bold">sin gastar en anuncios</span>
         </>
       ),

@@ -21,7 +21,7 @@ export default function Hero() {
         
         {/* Título principal - Montserrat, texto blanco, centrado */}
         <h1 className="font-[family-name:var(--font-montserrat)] text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white text-center leading-tight max-w-7xl mx-auto px-4">
-          Consigue de 3 a 5 Reuniones Cualificadas a la semana SIN GASTAR EN ANUNCIOS
+          El sistema automatizado que consigue de 3 a 5 reuniones cualificadas a la semana SIN GASTAR EN ANUNCIOS
         </h1>
 
         {/* Contenedor del video responsive con aspect-ratio 16:9 */}

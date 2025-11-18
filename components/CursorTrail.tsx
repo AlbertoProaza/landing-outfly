@@ -23,10 +23,10 @@ export default function CursorTrail() {
 
       setTrails((prev) => [...prev, newTrail]);
 
-      // Eliminar la estela después de 600ms
+      // Eliminar la estela después de 300ms (más rápido)
       setTimeout(() => {
         setTrails((prev) => prev.filter((trail) => trail.id !== newTrail.id));
-      }, 600);
+      }, 300);
     };
 
     window.addEventListener('mousemove', handleMouseMove);
@@ -41,11 +41,11 @@ export default function CursorTrail() {
       {trails.map((trail) => (
         <div
           key={trail.id}
-          className="absolute w-3 h-3 rounded-full bg-[#00D4FF] opacity-60 animate-trail-fade"
+          className="absolute w-1.5 h-1.5 rounded-full bg-[#00D4FF] opacity-15 animate-trail-fade"
           style={{
-            left: trail.x - 6,
-            top: trail.y - 6,
-            boxShadow: '0 0 10px #00D4FF, 0 0 20px #00D4FF',
+            left: trail.x - 3,
+            top: trail.y - 3,
+            boxShadow: '0 0 4px rgba(0, 212, 255, 0.2)',
           }}
         />
       ))}
